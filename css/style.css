@@ -966,7 +966,7 @@ a {
     display: flex!important
 }
 #scheme-Paradox .social-btn {
-    margin: 0 1pc;
+    margin: 0 0.15pc;
     width: 24px;
     height: 24px;
     border-radius: 2px;
