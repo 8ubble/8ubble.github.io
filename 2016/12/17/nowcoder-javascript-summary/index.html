@@ -4,7 +4,7 @@
     <!-- Title -->
     
     <title>
-        archive_a: 2016 | 质数的孤独
+        牛客网的一些JavaScript题的总结 | 质数的孤独
     </title>
     
     <!-- Favicons -->
@@ -40,7 +40,7 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://8ubble.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="archive_a: 2016 | 质数的孤独">
+    <meta property="og:title" content="牛客网的一些JavaScript题的总结 | 质数的孤独">
     <meta property="og:description" content="一个普通的Github博客而已">
     
      <!--[if lte IE 9]>
@@ -194,312 +194,263 @@
                 </button>
 				
 				
-                <!-- Index Module -->
-<div class="material-index mdl-grid">
-	
-		<!-- Paradox Header -->
-		<!-- Daily pic -->
-<div class="mdl-card daily-pic mdl-cell mdl-cell--8-col index-top-block">
-    
-    <!-- Pic & Slogan -->
-    <div class="mdl-card__media mdl-color-text--grey-50" style="background-image:url(/img/daily_pic.png)">
-        <p class="index-top-block-slogan"><a href="#">Hello,World!</a></p>
-    </div>
+                
+	<!-- Back Button -->
+<!--
+	<div class="material-back" id="backhome-div" tabindex="0">
+		<a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="#" onclick="window.history.back();return false;" target="_self" role="button" data-upgraded=",MaterialButton,MaterialRipple">
+			<i class="material-icons" role="presentation">arrow_back</i>
+			<span class="mdl-button__ripple-container">
+				<span class="mdl-ripple"></span>
+			</span>
+		</a>
+	</div>			
+-->
+	<!-- Left aligned menu below button -->
+	<button id="post-toc-trigger-btn"
+			class="mdl-button mdl-js-button mdl-button--icon">
+	  <i class="material-icons">format_list_numbered</i>
+	</button>
 
-    <!-- Avatar & Name -->
-    <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-        <!-- Author Avatar -->
-        <div id="author-avatar">
-            <img src="/img/avatar.png" width="32px" height="32px" alt="avatar">
-        </div>
-        <div>
-            <strong>Mr.8ubble</strong>
-        </div>
-    </div>
-</div>
-
-		<!-- Blog info -->
-<div class="mdl-card something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop index-top-block">
-	
-    <!-- Search -->
-	
-	<!-- Google -->
-	<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable" method="post" action="">
-		<label id="search-label" class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent mdl-shadow--4dp" for="search">
-			<i class="material-icons mdl-color-text--white" role="presentation">search</i>
-		</label>
-
-		<form id="search-form" method="get" action="//google.com/search" accept-charset="UTF-8" class="mdl-textfield__expandable-holder" target="_blank">
-			<input class="mdl-textfield__input search-input" type="search" name="q" id="search" placeholder="">
-			<label id="search-form-label" class="mdl-textfield__label" for="search"></label>
+	<ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+		for="post-toc-trigger-btn">
 			
-			<input type="hidden" name="sitesearch" value="https://8ubble.github.io">
-		</form>
-	</div>
-
-
-
-
-
-
-    <!-- LOGO -->
-    <div class="something-else-logo mdl-color--white mdl-color-text--grey-600">
-        <a href="null">
-            <img src="/img/logo.png" alt="logo" />
-        </a>
-    </div>
-
-    <!-- Infomation -->
-    <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
-        <!-- Blog Title -->
-        <div>
-            <strong>质数的孤独</strong>
-        </div>
-        <div class="section-spacer"></div>
-        
-        <!-- Pages -->
-        <button id="show-pages-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-            <i class="material-icons" role="presentation">view_carousel</i>
-            <span class="visuallyhidden">Pages</span>
-        </button>
-        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="show-pages-button">
-            
-        </ul>
-        
-        <!-- Menu -->
-        <button id="menubtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-            <i class="material-icons" role="presentation">more_vert</i>
-            <span class="visuallyhidden">show menu</span>
-        </button>
-        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="menubtn">
-            
-            <a class="index_share-link" href="null">
-                <li class="mdl-menu__item mdl-js-ripple-effect">
-                    文章 RSS
-                </li>
-            </a>
-            <a class="index_share-link" href="https://twitter.com/intent/tweet?text=质数的孤独&url=https://8ubble.github.io/&via=Mr.8ubble" target="_blank">
-                <li class="mdl-menu__item mdl-js-ripple-effect">
-                    分享到 Twitter
-                </li>
-            </a>
-            <a class="index_share-link" href="https://plus.google.com/share?url=https://8ubble.github.io/" target="_blank">
-                <li class="mdl-menu__item mdl-js-ripple-effect">
-                    分享到 Google+
-                </li>
-            </a>
-            <a class="index_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=质数的孤独&url=https://8ubble.github.io/&pic=&searchPic=false&style=simple" target="_blank">
-                <li class="mdl-menu__item mdl-js-ripple-effect">
-                    分享到微博
-                </li>
-            </a>
-        </ul>
-    </div>
-</div>
-
-	
-    
-    
+			
 		
-			<!-- Paradox Thumbnail -->
-        	<div class="post_entry-module mdl-card mdl-cell mdl-cell--12-col fade out">
-    
-    <!-- Post Thumbnail -->
+<!--			<li class="mdl-menu__item">Some Action</li>-->
+	</ul>
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+		
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+	<!-- Paradox Post Header -->
 	
 		
 			<!-- Random Thumbnail -->
 			<div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-		
-	
-				
-		<!-- Post Title -->
-		<p class="article-headline-p"><a href="/2016/12/17/nowcoder-javascript-summary/">牛客网的一些JavaScript题的总结</a></p>
-	</div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-          一些易错题：
-
-No.1 从这四个选项选出不同的一个：
-A、JQuery  B、Node.js ...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2016/12/17/nowcoder-javascript-summary/" target="_self">继续阅读</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="Mr.8ubble's avatar">
-            </div>
-            <div>
-                <strong>Mr.8ubble</strong>
-                <span>12月 17, 2016</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-            
-            
-            
-            <!-- Post Views -->
-            <span class="post_entry-views">
-                
-            </span>
-        </div>
-    </div>
-            
-</div>
-
-		
-		
-    
-		
-			<!-- Paradox Thumbnail -->
-        	<div class="post_entry-module mdl-card mdl-cell mdl-cell--12-col fade out">
-    
-    <!-- Post Thumbnail -->
-	
-		
-			<!-- Random Thumbnail -->
-			<div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-		
-	
-				
-		<!-- Post Title -->
-		<p class="article-headline-p"><a href="/2016/11/26/hexo-github-config/">Github配置hexo博客的一些坑</a></p>
-	</div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-          原来我是一只并不出名的逼乎网猴，然后现在正在试运行GitHub找找啥叫“另一个网盘”。
-这几天捣鼓hexo的时候踩了很多坑，现在就大概...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2016/11/26/hexo-github-config/" target="_self">继续阅读</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="Mr.8ubble's avatar">
-            </div>
-            <div>
-                <strong>Mr.8ubble</strong>
-                <span>11月 26, 2016</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-            
-            
-            
-            <!-- Post Views -->
-            <span class="post_entry-views">
-                
-            </span>
-        </div>
-    </div>
-            
-</div>
-
-		
-		
-    
-		
-			<!-- Paradox Thumbnail -->
-        	<div class="post_entry-module mdl-card mdl-cell mdl-cell--12-col fade out">
-    
-    <!-- Post Thumbnail -->
-	
-		
-			<!-- Random Thumbnail -->
-			<div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-		
-	
-				
-		<!-- Post Title -->
-		<p class="article-headline-p"><a href="/2016/11/26/hello-world/">Hello World</a></p>
-	</div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-          Welcome to Hexo
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2016/11/26/hello-world/" target="_self">继续阅读</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="Mr.8ubble's avatar">
-            </div>
-            <div>
-                <strong>Mr.8ubble</strong>
-                <span>11月 26, 2016</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-            
-            
-            
-            <!-- Post Views -->
-            <span class="post_entry-views">
-                
-            </span>
-        </div>
-    </div>
-            
-</div>
-
-		
-		
-    
-    
-	
-		<script>
+				<script>
     
     var randomNum;
+    randomNum = Math.floor(Math.random() * 5 + 1);
     
-    var locatePost = $(".something-else").next();
-    for(var i=0; i < 10; i++){
-        
-        randomNum = Math.floor(Math.random() * 5 + 1);
-        
-        locatePost.children(".post_thumbnail-random").attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children(".post_thumbnail-random").css('background-image', 'url(' + '/img/random/' + randomNum + '.png' + ')')
-        
-        locatePost = locatePost.next();
-    }
+    $(".post_thumbnail-random").css('background-image', 'url(' + '/img/random/' + randomNum + '.png' + ')');
     
 </script>
 
+		
+	
+        <p class="article-headline-p">
+            牛客网的一些JavaScript题的总结
+        </p>
+    </div>
+
 	
 
+				
+				
+					<!-- Paradox Post Info -->
+					<div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+    
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Mr.8ubble</strong>
+        <span>12月 17, 2016</span>
+    </div>
+    
+    <div class="section-spacer"></div>
+	
+    <!-- Favorite -->
+<!--
+    <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+        <i class="material-icons" role="presentation">favorite</i>
+        <span class="visuallyhidden">favorites</span>
+    </button>
+-->
+    
+    <!-- Tags (bookmark) -->
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/JavaScript/">JavaScript</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/NowCoder/">NowCoder</a>
+    </ul>
+    
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+    
+    
+    
+    
+    <!-- Share Twitter -->
+    <a class="post_share-link" href="https://twitter.com/intent/tweet?text=牛客网的一些JavaScript题的总结&url=https://8ubble.github.io//2016/12/17/nowcoder-javascript-summary/index.html&via=Mr.8ubble" target="_blank">
+        <li class="mdl-menu__item">
+            分享到 Twitter
+        </li>
+    </a>
+    
+    <!-- Share Google+ -->
+    <a class="post_share-link" href="https://plus.google.com/share?url=https://8ubble.github.io//2016/12/17/nowcoder-javascript-summary/index.html" target="_blank">
+        <li class="mdl-menu__item">
+            分享到 Google+
+        </li>
+    </a>
+    
+    <!-- Share Weibo -->
+    <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=牛客网的一些JavaScript题的总结&url=https://8ubble.github.io//2016/12/17/nowcoder-javascript-summary/index.html&pic=&searchPic=false&style=simple" target="_blank">
+        <li class="mdl-menu__item">
+            分享到微博
+        </li>
+    </a>
+</ul>
 </div>
+				
+
+                <!-- Post Content -->
+                <div id="post-content" class="markdown-Github mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+	
+		<p>一些易错题：</p>
+<blockquote>
+<p>No.1 从这四个选项选出不同的一个：</p>
+<p>A、JQuery  B、Node.js  C、Prototype  D、CommonJS</p>
+</blockquote>
+<p>当时真没看懂题目什么意思：第一个很常见，是个事件库。Node.js是一套工具包。没怎么听过CommonJS，但是我知道Prototype 属性是向对象添加属性和方法，然后我就选了这个。但是，答案是D。因为：</p>
+<blockquote>
+<p>Prototype.js是由Sam Stephenson写的一个JavaScript库。。。</p>
+<p>CommonJS是一套规范，NodeJS是这种规范的实现。</p>
+</blockquote>
+<p>好吧……</p>
+<blockquote>
+<p>No.2  以下哪一条JavaScript语句会产生运行错误：</p>
+<p>A、var obj=();  B、var obj=[];  C、var obj={};  D、var obj=/ /;</p>
+</blockquote>
+<p>在浏览器里调试了一下答案A，会显示Uncaught SyntaxError: Unexpected token )，然后答案选A。而D居然是声明正则对象。。。<br>（原来D答案这中间是有空格的）</p>
+<blockquote>
+<p>No.3 蔺相如，司马相如；魏无忌，长孙无忌。下列哪一组对应关系相似：</p>
+<p>A、PHP，Python;  B、JSP，servlet;  C、Java，Javascript;  D、C，C++;</p>
+</blockquote>
+<p>答案是C，大概是因为出的题目是JS类的吧。</p>
+<blockquote>
+<p>No.4  JavaScript中document.getElementById的返回值的类型为：</p>
+<p>A、Array;  B、Object;  C、String;  D、Function;</p>
+</blockquote>
+<p>这是一个功能吧？反正我记得是一个Function：</p>
+<blockquote>
+<p>document.getElementById</p>
+<p>function getElementById() { [native code] }</p>
+</blockquote>
+<p>结果答案选B。233……</p>
+<blockquote>
+<p>No.5  Flash和Js通过Externallnterface来进行交互。</p>
+</blockquote>
+<p>通过调用外部js(call)及设置被js调用接口(addCallback)的主要类。</p>
+<p>顺带说一下，这个也是IE的bug之一</p>
+<blockquote>
+<p>No.6 下面哪些语句可以在JS里判断一个对象oStringObject是否为String？</p>
+<p>A、oStringObject instanceof String  </p>
+<p>B、typeof oStringObject == ‘string’  </p>
+<p>C、oStringObject is String             </p>
+<p>D、以上说法都不对</p>
+</blockquote>
+<p>一般判断一个对象是什么类型会选用typeof来进行判断。但是特殊一点的会用instanceof。</p>
+<blockquote>
+<p>  No.7  Ajax和Flash相比，有什么优劣？</p>
+<p>  No.8 下面有关浏览器中使用js跨域获取数据的描述，说法错误的是？</p>
+<p>A、域名、端口相同，协议不同，属于相同的域</p>
+<p>B、js可以用jsonp进行跨域</p>
+<p>C、通过修改document.domain来跨子域</p>
+<p>D、使用window.name来进行跨域</p>
+</blockquote>
+<p>答案是A，域名、端口相同，协议有一改动的地方就会被认为是不同的域</p>
+<blockquote>
+<p>No.9 解释语言的特性：非独立、效率低</p>
+</blockquote>
+<p>（完了我用flask不会有啥事吧……）</p>
+<blockquote>
+<p>No.10 js中，可以用Array.join()来替代string += “xx”来提升字符串连接速度</p>
+</blockquote>
+<p>暂时没想出来……</p>
+<blockquote>
+<p>No.11 关于IE、FF下面脚本的区别描述错误的是？</p>
+<p>A、innerText IE支持，firefox不支持</p>
+<p>B、document.createElement firefox支持，IE不支持</p>
+<p>C、setAttribute(‘class’ , ‘styleClass’) firefox支持，IE支持</p>
+<p>D、用setAttribute设置事件，firefox不支持，IE支持</p>
+</blockquote>
+<p>答案是BD，具体参考<a href="http://w3help.org/zh-cn/causes/SD9017" target="_blank" rel="external">SD9017: Firefox 不支持 DOM 对象的 outerHTML、innerText、outerText 属性</a>、<a href="http://w3help.org/zh-cn/causes/SD9010" target="_blank" rel="external">SD9010: 仅 IE 中的 createElement 方法支持传入 HTML String 做参数</a>、<a href="http://w3help.org/zh-cn/causes/SD9006" target="_blank" rel="external">SD9006: IE 混淆了 DOM 对象属性（property）及 HTML 标签属性（attribute），造成了对 setAttribute、getAttribute 的不正确实现</a>等条目</p>
+<p>反正都是官方标准</p>
+<p>No.12 </p>
+<blockquote>
+<p>var myObject = {</p>
+<p>foo:”bar”, func:function(){</p>
+<p>var self = this;</p>
+<p>console.log(this.foo);</p>
+<p>console.log(self.foo);</p>
+<p>(function() {</p>
+<p>console.log(this.foo);</p>
+<p>console.log(self.foo);</p>
+<p>}());</p>
+<p>}</p>
+<p>};</p>
+<p>myObject.func();</p>
+</blockquote>
+<p>最后弹出的结果是<code>bar bar undefined bar</code></p>
+<p>被谁调用不是因为处在谁的作用域。最后一个考察了IIFE的作用域。</p>
+
+	
+	
+	
+	
+</div>
+				
+				
+
+                <!-- Post Comments -->
+                
+
+
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2016/11/26/hexo-github-config/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+        </div>
+    </div>
 
 				
 				
