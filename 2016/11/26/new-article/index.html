@@ -354,7 +354,32 @@
 <p>你这样也可以：<br><img src="https://pages.github.com/images/setup-in-desktop@2x.png" alt="官方图1"></p>
 <p><code>git clone</code>也可以，比较推荐用git CMD或者是git Bash来进行<code>git clone https://github.com/username/username.github.io</code> ，</p>
 <p>然后找到你刚刚克隆下来的GitHub.io的仓库，找到index.html，进行相应的更改之后再进行Commit和Pull即可。</p>
-<p>或者你也可以在项目管理页那儿进行编辑：</p>
+<p>或者你也可以在项目管理页那儿进行编辑。</p>
+<ul>
+<li><ol>
+<li>hexo配置的坑</li>
+</ol>
+</li>
+</ul>
+<p>以它最坑爹。</p>
+<p>安装node,js之后，然后找到对应主题进行clone，注意哦，都是免费的。</p>
+<p>或者你自己可以DIY一个。</p>
+<p>然后在<code>themes</code>文件夹里复制你刚刚的主题文件夹，是解压主题之后的文件夹。然后在博客根目录的<code>_config.tml</code>里开始进行配置。有些地方是不能留下空格的（我直接找了一份别的博客的_config.yml稍微修改了一下，避免了这个坑），然后保存。里面的permalink 就是你博客文章的目录结构，可以用pretty来简单的设置成日期+文章标题.html，也可以用自己喜欢的结构来设置。 记得把encoding 设置成utf-8，这样有利于中英文双语的写作和阅读。</p>
+<p>然后你可以试一下<code>hexo sever -p 5000</code>，看本地博客能不能跑起来。我在这儿选用了4000端口是因为我的电脑上有个别的程序使用了4000端口。确认无误后，可以用<code>hexo deploy</code>开始完工了。</p>
+<p>到这里你就可以开始写博客了，<code>hexo new &quot;My New Post&quot;</code>所有的文章直接放在_posts文件夹下面，格式就是我们之前提到的markdown文件，默认的格式是.md和.markdown文件。每篇文章的开始处需要使用yml格式来写明这篇文章的简单介绍，格式如下：</p>
+<blockquote>
+<hr>
+<p>  author: kresnikwang<br>   comments: true<br>   date: 2015-04-28 17:42:32+00:00<br>   layout: post<br>   title: PHP, Angular JS Development|My Export Quote|农产品出口工具开发<br>   categories:</p>
+<ul>
+<li>Works</li>
+<li>Tech<br>tags:</li>
+<li>bootstrap</li>
+<li>javascript</li>
+<li>php</li>
+<li>AngularJS</li>
+</ul>
+<hr>
+</blockquote>
 
 	
 	
