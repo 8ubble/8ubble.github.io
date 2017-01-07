@@ -5,7 +5,7 @@
     <!-- Title -->
     
     <title>
-        牛客网的一些JavaScript题的总结 | 质数的孤独
+        SQLAlchemy v1.1手册-综述篇 | 质数的孤独
     </title>
     
     <!-- Favicons -->
@@ -41,7 +41,7 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://8ubble.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="牛客网的一些JavaScript题的总结 | 质数的孤独">
+    <meta property="og:title" content="SQLAlchemy v1.1手册-综述篇 | 质数的孤独">
     <meta property="og:description" content="一个普通的Github博客而已">
     
      <!--[if lte IE 9]>
@@ -216,7 +216,7 @@
 	<ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
 		for="post-toc-trigger-btn">
 			
-			
+			<ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#综述"><span class="post-toc-number">1.</span> <span class="post-toc-text">综述</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#文档综述"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">文档综述</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#代码示例"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">代码示例</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#安装向导"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">安装向导</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#支持平台"><span class="post-toc-number">1.3.1.</span> <span class="post-toc-text">支持平台</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#支持的安装姿势"><span class="post-toc-number">1.3.2.</span> <span class="post-toc-text">支持的安装姿势</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#pip安装"><span class="post-toc-number">1.3.3.</span> <span class="post-toc-text">pip安装</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#setup-py安装"><span class="post-toc-number">1.3.4.</span> <span class="post-toc-text">setup.py安装</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#安装C扩展"><span class="post-toc-number">1.3.5.</span> <span class="post-toc-text">安装C扩展</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Python3安装"><span class="post-toc-number">1.3.6.</span> <span class="post-toc-text">Python3安装</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#数据库API安装"><span class="post-toc-number">1.3.7.</span> <span class="post-toc-text">数据库API安装</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#检查已安装的SQLAlchemy版本"><span class="post-toc-number">1.3.8.</span> <span class="post-toc-text">检查已安装的SQLAlchemy版本</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#v1-0迁移到v1-1"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">v1.0迁移到v1.1</span></a></li></ol></li></ol>
 		
 <!--			<li class="mdl-menu__item">Some Action</li>-->
 	</ul>
@@ -249,7 +249,7 @@
 		
 	
         <p class="article-headline-p">
-            牛客网的一些JavaScript题的总结
+            SQLAlchemy v1.1手册-综述篇
         </p>
     </div>
 
@@ -267,7 +267,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>Mr.8ubble</strong>
-        <span>12月 17, 2016</span>
+        <span>1月 07, 2017</span>
     </div>
     
     <div class="section-spacer"></div>
@@ -287,7 +287,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/JavaScript/">JavaScript</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/NowCoder/">NowCoder</a>
+        <a class="post_tag-link" href="/tags/SQLAlchemy/">SQLAlchemy</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/python/">python</a>
     </ul>
     
     <!-- Share -->
@@ -302,21 +302,21 @@
     
     
     <!-- Share Twitter -->
-    <a class="post_share-link" href="https://twitter.com/intent/tweet?text=牛客网的一些JavaScript题的总结&url=https://8ubble.github.io//2016/12/17/nowcoder-javascript-summary/index.html&via=Mr.8ubble" target="_blank">
+    <a class="post_share-link" href="https://twitter.com/intent/tweet?text=SQLAlchemy v1.1手册-综述篇&url=https://8ubble.github.io//2017/01/07/sqlalchemyorm-overview/index.html&via=Mr.8ubble" target="_blank">
         <li class="mdl-menu__item">
             分享到 Twitter
         </li>
     </a>
     
     <!-- Share Google+ -->
-    <a class="post_share-link" href="https://plus.google.com/share?url=https://8ubble.github.io//2016/12/17/nowcoder-javascript-summary/index.html" target="_blank">
+    <a class="post_share-link" href="https://plus.google.com/share?url=https://8ubble.github.io//2017/01/07/sqlalchemyorm-overview/index.html" target="_blank">
         <li class="mdl-menu__item">
             分享到 Google+
         </li>
     </a>
     
     <!-- Share Weibo -->
-    <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=牛客网的一些JavaScript题的总结&url=https://8ubble.github.io//2016/12/17/nowcoder-javascript-summary/index.html&pic=&searchPic=false&style=simple" target="_blank">
+    <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=SQLAlchemy v1.1手册-综述篇&url=https://8ubble.github.io//2017/01/07/sqlalchemyorm-overview/index.html&pic=&searchPic=false&style=simple" target="_blank">
         <li class="mdl-menu__item">
             分享到微博
         </li>
@@ -328,93 +328,53 @@
                 <!-- Post Content -->
                 <div id="post-content" class="markdown-Github mdl-color-text--grey-700 mdl-card__supporting-text fade out">
 	
-		<p>一些易错题：</p>
-<blockquote>
-<p>No.1 从这四个选项选出不同的一个：</p>
-<p>A、JQuery  B、Node.js  C、Prototype  D、CommonJS</p>
+		<blockquote>
+<p>原文传送门：<a href="http://docs.sqlalchemy.org/en/latest/intro.html" target="_blank" rel="external">Overview-SQLAlchemy 1.1 Documentation</a></p>
 </blockquote>
-<p>当时真没看懂题目什么意思：第一个很常见，是个事件库。Node.js是一套工具包。没怎么听过CommonJS，但是我知道Prototype 属性是向对象添加属性和方法，然后我就选了这个。但是，答案是D。因为：</p>
+<h2 id="综述"><a href="#综述" class="headerlink" title="综述"></a>综述</h2><p>SQLAlchemy SQL工具包和对象关系映射器是一套用于处理数据库和Python的综合工具。 它具有几个不同的功能区域，可以单独使用或组合使用。 其主要组件依赖层如下所示：<br><img src="http://docs.sqlalchemy.org/en/latest/_images/sqla_arch_small.png" alt="sqla_arch_small"></p>
+<p>综上所述，SQLAlchemy的两个最值得注意的前置部分是<strong>对象关系映射器</strong>和<strong>SQL表达式语言</strong>。 SQL表达式可以独立于ORM使用。 当使用ORM时，SQL Expression语言仍然是面向公众的API的一部分，因为它在对象关系配置和查询中使用。</p>
+<h3 id="文档综述"><a href="#文档综述" class="headerlink" title="文档综述"></a>文档综述</h3><p>本篇分为三个部分：<a href="http://docs.sqlalchemy.org/en/latest/orm/index.html" target="_blank" rel="external">SQLAlchemy ORM</a>、<a href="http://docs.sqlalchemy.org/en/latest/core/index.html" target="_blank" rel="external">SQLAlchemy Core</a>和<a href="http://docs.sqlalchemy.org/en/latest/dialects/index.html" target="_blank" rel="external">Dialects</a>。</p>
+<p>在<a href="http://docs.sqlalchemy.org/en/latest/orm/index.html" target="_blank" rel="external">SQLAlchemy ORM</a>中，引入了<a href="http://docs.sqlalchemy.org/en/latest/orm/tutorial.html" target="_blank" rel="external">对象关系映射器</a>并给了详细的描述。新用户应该从<a href="http://docs.sqlalchemy.org/en/latest/orm/tutorial.html" target="_blank" rel="external">对象关系教程</a>开始。如果要使用自动构建的高级SQL，以及管理Python对象，请继续阅读本教程。</p>
+<p>在<a href="http://docs.sqlalchemy.org/en/latest/core/index.html" target="_blank" rel="external">SQLAlchemy Core</a>中，提供了SQLAlchemy的表达式语言和数据库整合集成服务的文档。 它的表达式语言是一个独立于ORM包的工具包，可用于构造可操作的SQL语句，可以通过编程来构造，修改和执行并返回指定的结果集。与ORM的以域为中心的模式相反，SQL表达式提供了以架构为中心的使用思想。这儿有一份面向新手的<a href="http://docs.sqlalchemy.org/en/latest/core/tutorial.html" target="_blank" rel="external">构建教程</a>。 SQLAlchemy引擎，连接和整合服务也在这份<a href="http://docs.sqlalchemy.org/en/latest/core/index.html" target="_blank" rel="external">SQLAlchemy Core</a>中进行了描述。</p>
+<p>在<a href="http://docs.sqlalchemy.org/en/latest/dialects/index.html" target="_blank" rel="external">Dialects</a>中，准备了所有支持的数据库和DBAPI后端的参考文档。</p>
+<h3 id="代码示例"><a href="#代码示例" class="headerlink" title="代码示例"></a>代码示例</h3><p>SQLAlchemy的分布中包括了工作代码示例（主要涉及ORM）中。 所有包括的示例应用程序的描述在<a href="http://docs.sqlalchemy.org/en/latest/orm/examples.html" target="_blank" rel="external">ORM示例</a>中。</p>
+<p>SQLAlchemy核心结构和ORM的wiki的详细版，请移步<a href="http://www.sqlalchemy.org/trac/wiki/UsageRecipes" target="_blank" rel="external">Theatrum Chemicum</a>。</p>
+<h3 id="安装向导"><a href="#安装向导" class="headerlink" title="安装向导"></a>安装向导</h3><h4 id="支持平台"><a href="#支持平台" class="headerlink" title="支持平台"></a>支持平台</h4><p>SQLAlchemy已针对以下平台进行测试：</p>
+<ul>
+<li>cPython since version 2.6, 其他2.xx series也可以</li>
+<li>cPython version 3, 包括所有的3系列</li>
+<li>Pypy 2.1以及更高版本</li>
+</ul>
+<p><em>v0.9提示</em>：请在Python 2.6以及更高版本使用SQLAlchemy</p>
+<p>当前不支持的平台包括Jython和IronPython。 在过去已经对Jpython提供支持，并且在将来的版本中也会加入版本支持，（至于是啥时候）这取决于Jython（的开发）。</p>
+<h4 id="支持的安装姿势"><a href="#支持的安装姿势" class="headerlink" title="支持的安装姿势"></a>支持的安装姿势</h4><p>SQLAlchemy可通过基于<a href="https://pypi.python.org/pypi/setuptools/" target="_blank" rel="external">setuptools</a>的标准Python方法安装，通过直接引用setup.py或通过使用pip或其他与setuptools兼容的方法。</p>
+<p><em>v1.1提示</em>：setuptools现在所需的设置.py文件，不再支持通过distutils安装。</p>
+<h4 id="pip安装"><a href="#pip安装" class="headerlink" title="pip安装"></a>pip安装</h4><p>可以用pip的时候，从Pypi下载并一步安装</p>
 <blockquote>
-<p>Prototype.js是由Sam Stephenson写的一个JavaScript库。。。</p>
-<p>CommonJS是一套规范，NodeJS是这种规范的实现。</p>
+<p>pip install SQLAlchemy</p>
 </blockquote>
-<p>好吧……</p>
+<p>此命令将从<a href="http://pypi.python.org/pypi/SQLAlchemy" target="_blank" rel="external">Python Cheese Shop</a>下载SQLAlchemy最新<em>发布</em>版本，并将其安装到系统中。</p>
+<p>如果要安装最新的预发布版本，例如<code>1.1.0b1</code>，pip要求使用<code>--pre</code>：</p>
 <blockquote>
-<p>No.2  以下哪一条JavaScript语句会产生运行错误：</p>
-<p>A、var obj=();  B、var obj=[];  C、var obj={};  D、var obj=/ /;</p>
+<p>pip install –pre SQLAlchemy</p>
 </blockquote>
-<p>在浏览器里调试了一下答案A，会显示Uncaught SyntaxError: Unexpected token )，然后答案选A。而D居然是声明正则对象。。。<br>（原来D答案这中间是有空格的）</p>
+<p>这条命令会给你安装预览版本，而不是最新的稳定版。</p>
+<h4 id="setup-py安装"><a href="#setup-py安装" class="headerlink" title="setup.py安装"></a>setup.py安装</h4><p>除了上面那个，你也可以用setup脚本：</p>
 <blockquote>
-<p>No.3 蔺相如，司马相如；魏无忌，长孙无忌。下列哪一组对应关系相似：</p>
-<p>A、PHP，Python;  B、JSP，servlet;  C、Java，Javascript;  D、C，C++;</p>
+<p>python setup.py install</p>
 </blockquote>
-<p>答案是C，大概是因为出的题目是JS类的吧。</p>
+<h4 id="安装C扩展"><a href="#安装C扩展" class="headerlink" title="安装C扩展"></a>安装C扩展</h4><p>SQLAlchemy包括C扩展，为处理结果集提供额外的速度提升。 扩展在2.xx和3.xx系列的cPython上都受支持。</p>
+<p>如果检测到适当的平台，setup.py将自动构建扩展。 如果C扩展的构建由于缺少编译器或其他问题而失败，则设置过程将输出警告消息，并在完成时重新运行不带C扩展的构建，报告最终状态。</p>
+<p>要运行构建/安装，甚至不尝试编译C扩展，可以指定DISABLE_SQLALCHEMY_CEXT环境变量。 这种情况是用于特殊的测试环境，或者在通常的“重建”机制不能克服的兼容性/构建问题的罕见情况下：</p>
 <blockquote>
-<p>No.4  JavaScript中document.getElementById的返回值的类型为：</p>
-<p>A、Array;  B、Object;  C、String;  D、Function;</p>
+<p>export DISABLE_SQLALCHEMY_CEXT=1; python setup.py install</p>
 </blockquote>
-<p>这是一个功能吧？反正我记得是一个Function：</p>
-<blockquote>
-<p>document.getElementById</p>
-<p>function getElementById() { [native code] }</p>
-</blockquote>
-<p>结果答案选B。233……</p>
-<blockquote>
-<p>No.5  Flash和Js通过Externallnterface来进行交互。</p>
-</blockquote>
-<p>通过调用外部js(call)及设置被js调用接口(addCallback)的主要类。</p>
-<p>顺带说一下，这个也是IE的bug之一</p>
-<blockquote>
-<p>No.6 下面哪些语句可以在JS里判断一个对象oStringObject是否为String？</p>
-<p>A、oStringObject instanceof String  </p>
-<p>B、typeof oStringObject == ‘string’  </p>
-<p>C、oStringObject is String             </p>
-<p>D、以上说法都不对</p>
-</blockquote>
-<p>一般判断一个对象是什么类型会选用typeof来进行判断。但是特殊一点的会用instanceof。</p>
-<blockquote>
-<p>  No.7  Ajax和Flash相比，有什么优劣？</p>
-<p>  No.8 下面有关浏览器中使用js跨域获取数据的描述，说法错误的是？</p>
-<p>A、域名、端口相同，协议不同，属于相同的域</p>
-<p>B、js可以用jsonp进行跨域</p>
-<p>C、通过修改document.domain来跨子域</p>
-<p>D、使用window.name来进行跨域</p>
-</blockquote>
-<p>答案是A，域名、端口相同，协议有一改动的地方就会被认为是不同的域</p>
-<blockquote>
-<p>No.9 解释语言的特性：非独立、效率低</p>
-</blockquote>
-<p>（完了我用flask不会有啥事吧……）</p>
-<blockquote>
-<p>No.10 js中，可以用Array.join()来替代string += “xx”来提升字符串连接速度</p>
-</blockquote>
-<p>暂时没想出来……</p>
-<blockquote>
-<p>No.11 关于IE、FF下面脚本的区别描述错误的是？</p>
-<p>A、innerText IE支持，firefox不支持</p>
-<p>B、document.createElement firefox支持，IE不支持</p>
-<p>C、setAttribute(‘class’ , ‘styleClass’) firefox支持，IE支持</p>
-<p>D、用setAttribute设置事件，firefox不支持，IE支持</p>
-</blockquote>
-<p>答案是BD，具体参考<a href="http://w3help.org/zh-cn/causes/SD9017" target="_blank" rel="external">SD9017: Firefox 不支持 DOM 对象的 outerHTML、innerText、outerText 属性</a>、<a href="http://w3help.org/zh-cn/causes/SD9010" target="_blank" rel="external">SD9010: 仅 IE 中的 createElement 方法支持传入 HTML String 做参数</a>、<a href="http://w3help.org/zh-cn/causes/SD9006" target="_blank" rel="external">SD9006: IE 混淆了 DOM 对象属性（property）及 HTML 标签属性（attribute），造成了对 setAttribute、getAttribute 的不正确实现</a>等条目</p>
-<p>反正都是官方标准</p>
-<p>No.12 </p>
-<blockquote>
-<p>var myObject = {</p>
-<p>foo:”bar”, func:function(){</p>
-<p>var self = this;</p>
-<p>console.log(this.foo);</p>
-<p>console.log(self.foo);</p>
-<p>(function() {</p>
-<p>console.log(this.foo);</p>
-<p>console.log(self.foo);</p>
-<p>}());</p>
-<p>}</p>
-<p>};</p>
-<p>myObject.func();</p>
-</blockquote>
-<p>最后弹出的结果是<code>bar bar undefined bar</code></p>
-<p>被谁调用不是因为处在谁的作用域。最后一个考察了IIFE的作用域。</p>
+<p><em>v1.1提示</em>：因为以前的–without-cextensions选项在依赖于setuptools的某些功能已经过时，所以–without-cextensions选项现在已从安装程序中删除。</p>
+<h4 id="Python3安装"><a href="#Python3安装" class="headerlink" title="Python3安装"></a>Python3安装</h4><p>SQLAlchemy直接在Python 2或Python 3上运行，无需任何调整或转换代码就可以在任何环境中安装。</p>
+<h4 id="数据库API安装"><a href="#数据库API安装" class="headerlink" title="数据库API安装"></a>数据库API安装</h4><p>SQLAlchemy被设计为与为特定数据库构建的<a href="http://docs.sqlalchemy.org/en/latest/glossary.html#term-dbapi" target="_blank" rel="external">DBAPI</a>实现实时操作，并且包括对最流行的数据库的支持。 <a href="http://docs.sqlalchemy.org/en/latest/dialects/index.html" target="_blank" rel="external">Dialects</a>中的各个数据库部分提供了每个数据库的可用DBAPI，包括外部链接。</p>
+<h4 id="检查已安装的SQLAlchemy版本"><a href="#检查已安装的SQLAlchemy版本" class="headerlink" title="检查已安装的SQLAlchemy版本"></a>检查已安装的SQLAlchemy版本</h4><p>本文档涵盖SQLAlchemy版本1.1。 如果你在一个已经安装了SQLAlchemy的系统上工作，请从Python提示符中检查版本，如下所示：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; import sqlalchemy</div><div class="line">&gt;&gt;&gt; sqlalchemy.__version__ # doctest: +SKIP</div><div class="line">1.1.0</div></pre></td></tr></table></figure>
+<h3 id="v1-0迁移到v1-1"><a href="#v1-0迁移到v1-1" class="headerlink" title="v1.0迁移到v1.1"></a>v1.0迁移到v1.1</h3><p>从1.0到1.1的变化之处，可以在<a href="http://docs.sqlalchemy.org/en/latest/changelog/migration_11.html" target="_blank" rel="external">SQLAlchemy 1.1的新特性</a>中找到。</p>
 
 	
 	
@@ -435,21 +395,13 @@
     
     <!-- Prev Nav -->
     
-        <a href="/2016/12/26/Requirejs-initiating-tips/" id="post_nav-newer" class="prev-content">
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            新篇
-        </a>
-    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
     
-        <a href="/2016/11/26/hexo-github-config/" id="post_nav-older" class="next-content">
+        <a href="/2016/12/26/Requirejs-initiating-tips/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
