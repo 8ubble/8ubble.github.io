@@ -404,14 +404,19 @@
 <p>反正都是官方标准</p>
 <p>No.12 </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">var myObject = &#123;</div><div class="line">    foo : &quot;bar&quot; ,</div><div class="line">    func : function() &#123;</div><div class="line">        var self = this ;</div><div class="line">        console.log(this.foo);</div><div class="line">        console.log(self.foo);</div><div class="line">        (function() &#123;</div><div class="line">            console.log(this.foo);</div><div class="line">            console.log(self.foo);</div><div class="line">        &#125;());</div><div class="line">    &#125;</div><div class="line"> &#125;;</div><div class="line">myObject.func();</div></pre></td></tr></table></figure>
-<p>最后弹出的结果是<figure class="highlight plain"><figcaption><span>bar undefined bar```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">被谁调用不是因为处在谁的作用域。最后一个考察了IIFE的作用域。</div><div class="line"></div><div class="line">No.13</div></pre></td></tr></table></figure></p>
-<p>function Foo(){<br>    var i = 0;<br>    return function(){<br>            document.write(I++);<br>            }<br>    }<br>var f1 = Foo(),<br>f2 = Foo();<br>f1();<br>f1();<br>f2();<br>```<br>输出010，f1和f2是相互之间不影响的全局变量，本题也考察了闭包。</p>
-<p>No.14 在jQuary中想要找到所有元素的同辈元素，可以考虑siblings([expr])</p>
+<p>最后弹出的结果是<code>bar bar undefined bar</code></p>
+<p>被谁调用不是因为处在谁的作用域。最后一个考察了IIFE的作用域。</p>
+<p>No.13</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">function Foo()&#123;</div><div class="line">    var i = 0;</div><div class="line">    return function()&#123;</div><div class="line">            document.write(I++);</div><div class="line">            &#125;</div><div class="line">    &#125;</div><div class="line">var f1 = Foo(),</div><div class="line">f2 = Foo();</div><div class="line">f1();</div><div class="line">f1();</div><div class="line">f2();</div></pre></td></tr></table></figure>
+<p>输出010，f1和f2是相互之间不影响的全局变量，本题也考察了闭包。</p>
+<blockquote>
+<p>No.14 在jQuary中想要找到所有元素的同辈元素，可以考虑<code>siblings([expr])</code></p>
 <p>No.15 语句var arr=[a,b,c,d];执行后，数组arr中每项都是一个整数，下面得到其中最大整数语句正确的是哪几项？</p>
 <p>A、Math.max(arr)</p>
 <p>B、Math.max(arr[0], arr[1], arr[2], arr[3])</p>
 <p>C、Math.max.call(Math, arr[0], arr[1], arr[2], arr[3])</p>
 <p>D、Math.max.apply(Math,arr)</p>
+</blockquote>
 <p>答案是BCD，A中的函数 Math.max(x);的参数是Number类型，可以是小数，整数，正数，负数或者是0.如果不是上面所述类型就会返回NaN.</p>
 
 	
