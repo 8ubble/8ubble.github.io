@@ -353,11 +353,7 @@
 <p>No.4  JavaScript中document.getElementById的返回值的类型为：</p>
 <p>A、Array;  B、Object;  C、String;  D、Function;</p>
 </blockquote>
-<p>这是一个功能吧？反正我记得是一个Function：</p>
-<blockquote>
-<p>document.getElementById</p>
-<p>function getElementById() { [native code] }</p>
-</blockquote>
+<p>这是一个功能吧？反正我记得是一个Function：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt; document.getElementById</div><div class="line">&gt; function getElementById() &#123; [native code] &#125;</div></pre></td></tr></table></figure></p>
 <p>结果答案选B。233……</p>
 <blockquote>
 <p>No.5  Flash和Js通过Externallnterface来进行交互。</p>
@@ -374,6 +370,14 @@
 <p>一般判断一个对象是什么类型会选用typeof来进行判断。但是特殊一点的会用instanceof。</p>
 <blockquote>
 <p>  No.7  Ajax和Flash相比，有什么优劣？</p>
+</blockquote>
+<ul>
+<li><p>Ajax的优点：开放性、易用性和易于开发，但是有可能破坏浏览器的后退功能</p>
+</li>
+<li><p>Flash多用于多媒体处理，可以更容易的调用浏览器以外的外部资源。但是文件体积有可能挺大……</p>
+</li>
+</ul>
+<blockquote>
 <p>  No.8 下面有关浏览器中使用js跨域获取数据的描述，说法错误的是？</p>
 <p>A、域名、端口相同，协议不同，属于相同的域</p>
 <p>B、js可以用jsonp进行跨域</p>
@@ -399,22 +403,16 @@
 <p>答案是BD，具体参考<a href="http://w3help.org/zh-cn/causes/SD9017" target="_blank" rel="external">SD9017: Firefox 不支持 DOM 对象的 outerHTML、innerText、outerText 属性</a>、<a href="http://w3help.org/zh-cn/causes/SD9010" target="_blank" rel="external">SD9010: 仅 IE 中的 createElement 方法支持传入 HTML String 做参数</a>、<a href="http://w3help.org/zh-cn/causes/SD9006" target="_blank" rel="external">SD9006: IE 混淆了 DOM 对象属性（property）及 HTML 标签属性（attribute），造成了对 setAttribute、getAttribute 的不正确实现</a>等条目</p>
 <p>反正都是官方标准</p>
 <p>No.12 </p>
-<blockquote>
-<p>var myObject = {</p>
-<p>foo:”bar”, func:function(){</p>
-<p>var self = this;</p>
-<p>console.log(this.foo);</p>
-<p>console.log(self.foo);</p>
-<p>(function() {</p>
-<p>console.log(this.foo);</p>
-<p>console.log(self.foo);</p>
-<p>}());</p>
-<p>}</p>
-<p>};</p>
-<p>myObject.func();</p>
-</blockquote>
-<p>最后弹出的结果是<code>bar bar undefined bar</code></p>
-<p>被谁调用不是因为处在谁的作用域。最后一个考察了IIFE的作用域。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">var myObject = &#123;</div><div class="line">    foo : &quot;bar&quot; ,</div><div class="line">    func : function() &#123;</div><div class="line">        var self = this ;</div><div class="line">        console.log(this.foo);</div><div class="line">        console.log(self.foo);</div><div class="line">        (function() &#123;</div><div class="line">            console.log(this.foo);</div><div class="line">            console.log(self.foo);</div><div class="line">        &#125;());</div><div class="line">    &#125;</div><div class="line"> &#125;;</div><div class="line">myObject.func();</div></pre></td></tr></table></figure>
+<p>最后弹出的结果是<figure class="highlight plain"><figcaption><span>bar undefined bar```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">被谁调用不是因为处在谁的作用域。最后一个考察了IIFE的作用域。</div><div class="line"></div><div class="line">No.13</div></pre></td></tr></table></figure></p>
+<p>function Foo(){<br>    var i = 0;<br>    return function(){<br>            document.write(I++);<br>            }<br>    }<br>var f1 = Foo(),<br>f2 = Foo();<br>f1();<br>f1();<br>f2();<br>```<br>输出010，f1和f2是相互之间不影响的全局变量，本题也考察了闭包。</p>
+<p>No.14 在jQuary中想要找到所有元素的同辈元素，可以考虑siblings([expr])</p>
+<p>No.15 语句var arr=[a,b,c,d];执行后，数组arr中每项都是一个整数，下面得到其中最大整数语句正确的是哪几项？</p>
+<p>A、Math.max(arr)</p>
+<p>B、Math.max(arr[0], arr[1], arr[2], arr[3])</p>
+<p>C、Math.max.call(Math, arr[0], arr[1], arr[2], arr[3])</p>
+<p>D、Math.max.apply(Math,arr)</p>
+<p>答案是BCD，A中的函数 Math.max(x);的参数是Number类型，可以是小数，整数，正数，负数或者是0.如果不是上面所述类型就会返回NaN.</p>
 
 	
 	
